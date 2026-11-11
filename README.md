@@ -29,17 +29,14 @@ Before reviewing individual accounts, I want to understand the risks this approa
 - **Data Exposure and Integrity Risk:** Excessive permissions could allow sensitive information to be viewed, exported, modified or deleted without proper authorisation.
 - **Weak Access Oversight:** Without clearly defined roles, it becomes difficult to know who needs which permissions, identify unnecessary access and apply consistent controls.
 
-These are potential risks, not confirmed findings. **The permission matrix will help me establish where they actually exist and which ones need attention first.**
+With these risks in mind, I reviewed the permission matrix to identify any signs of them.
 
 <BR>
 
-
 ## The Investigation
 
+I approached the permission review with four questions, focusing on **role consistency, business justification and potentially conflicting access.**
 
-Before proposing new roles, I need to establish **where permissions differ, whether those differences are justified and which access combinations create security risks.**
-
-Four questions guided my investigation:
 
 ### 1. What access does each job actually require?
 I compared employees with similar responsibilities to identify which permissions might belong in a standard role and which need further justification.
