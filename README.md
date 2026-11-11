@@ -35,7 +35,7 @@ With these risks in mind, I reviewed the permission matrix to identify any signs
 
 I approached the permission review with four questions, focusing on **role consistency, business justification and potentially conflicting access.**
 
-###1. What access does each job actually require?
+### 1. What access does each job actually require?
 I compared employees with similar responsibilities to identify permissions that might belong in a standard role, subject to business approval.
 
 ### 2. Which permissions are necessary for each role, and which may be excessive?
