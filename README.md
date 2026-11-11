@@ -16,18 +16,17 @@ My manager writes:
 <BR>
 
 
-
 ## What's the Risk?
 
-The IT Manager mentioned that permissions have been copied from employees with similar jobs, without checking what each person actually needs.
+The IT Manager mentioned that permissions have been copied between employees without checking what each person actually needs.
 
-Before reviewing individual accounts, I want to understand the risks this approach could introduce:
+This raises five potential IAM risks:
 
-- **Privilege Creep:** Employees may accumulate permissions they no longer need, particularly as their responsibilities change.
-- **Least Privilege Violation:** Users may have access to functions beyond what their jobs require.
-- **Segregation of Duties (SoD) Conflict:** One person could hold permissions to approve and carry out sensitive financial transactions without sufficient independent oversight, increasing the risk of fraud.
-- **Data Exposure and Integrity Risk:** Excessive permissions could allow sensitive information to be viewed, exported, modified or deleted without proper authorisation.
-- **Weak Access Oversight:** Without clearly defined roles, it becomes difficult to know who needs which permissions, identify unnecessary access and apply consistent controls.
+- **Privilege Creep:** Accumulation of unnecessary permissions.
+- **Least Privilege Violations:** Access beyond job requirements.
+- **Segregation of Duties (SoD) Conflicts:** Conflicting permissions without independent oversight.
+- **Data Exposure and Integrity Risks:** Unauthorised access, changes or deletion of sensitive data.
+- **Weak Access Oversight:** Poor visibility and control over assigned permissions.
 
 With these risks in mind, I reviewed the permission matrix to identify any signs of them.
 
