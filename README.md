@@ -61,6 +61,9 @@ Reducing permissions is only part of the picture. The main thing is that access 
 
 ## Case Study Outcome
 
+**Designed for growth:** I proposed a role structure based on business responsibilities rather than copying permissions between employees. The aim is to make access consistent as Northwind Health grows, without creating unnecessary roles or weakening security controls.
+
+[Explore the proposed role catalogue](Document/02.%20Role%20Catalogue.md)
 <BR><BR>
 
 ## Reflection & Next Steps
