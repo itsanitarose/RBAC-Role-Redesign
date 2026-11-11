@@ -53,4 +53,30 @@ I considered how to move users into defined roles without removing necessary acc
 
 Reducing permissions is only part of the picture. The main thing is that access matches responsibilities without creating unnecessary exposure.
 
+<BR>
+
+## What I Found
+
+<BR><BR>
+
+## Case Study Outcome
+
+<BR><BR>
+
+## Reflection & Next Steps
+
+<BR><BR>
+
+## Explore the Investigation
+| Document | What's Inside |
+|---|---|
+| [01. Source Data](Document/01.%20Source%20Data.md) | Original permissions matrix |
+| [02. Role Catalogue](Document/02.%20Role%20Catalogue.md) | Proposed roles and permissions |
+| [03. Access Outliers](Document/03.%20Access%20Outliers.md) | Exceptions and recommended actions |
+| [04. Segregation of Duties](Document/04.%20Segregation%20of%20Duties.md) | Conflicting permissions and affected users |
+| [05. Rollout & Verification](Document/05.%20Rollout%20%26%20Verification.md) | Safe migration plan and validation checks |
+| [06. Digging Deeper](Document/06.%20Digging%20Deeper.md) | Permission grant reduction calculation |
+
+
+
 
