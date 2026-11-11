@@ -31,15 +31,18 @@ With these risks in mind, I reviewed the permission matrix to identify any signs
 
 <BR>
 
+
 ## The Investigation
 
 I approached the permission review with four questions, focusing on **role consistency, business justification and potentially conflicting access.**
 
+
 ### 1. What access does each job actually require?
 I compared employees with similar responsibilities to identify permissions that might belong in a standard role, subject to business approval.
 
+
 ### 2. Which permissions are necessary for each role, and which may be excessive?
-I looked for unusual permissions, inconsistencies between colleagues and access that may need removing or further justification.
+I looked for unusual permissions, inconsistencies between colleagues and access that may need removing or further justification
 
 ### 3. Which permissions create SoD conflicts?
 I examined whether users could perform conflicting actions, especially approving and issuing refunds
@@ -47,9 +50,8 @@ I examined whether users could perform conflicting actions, especially approving
 ### 4. How can we introduce new roles without disrupting work?
 I considered how to move users into defined roles without removing necessary access or disrupting billing operations.
 
-<BR>
-
 Reducing permissions is only part of the picture. The main thing is that access matches responsibilities without creating unnecessary exposure.
+
 
 <BR>
 
