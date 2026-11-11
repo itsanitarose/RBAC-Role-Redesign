@@ -39,16 +39,16 @@ I approached the permission review with four questions, focusing on **role consi
 
 
 ### 1. What access does each job actually require?
-I compared employees with similar responsibilities to identify which permissions might belong in a standard role and which need further justification.
+I compared employees with similar responsibilities to identify permissions that might belong in a standard role, subject to business approval.
 
 ### 2. Which permissions are necessary for each role, and which may be excessive?
-I looked for unusual permissions, differences between people doing the same job and accounts that might need closer review.
+I looked for unusual permissions, inconsistencies between colleagues and access that may need removing or further justification.
 
-### 3. Which permission combinations could create conflicts?
-I examined whether individuals could perform sensitive financial activities that should be subject to independent checks.
+### 3. Which permissions create SoD conflicts?
+I examined whether users could perform conflicting actions, especially approving and issuing refunds
 
 ### 4. How can we introduce new roles without disrupting work?
-I considered how to move from individual permissions to a consistent role structure while protecting legitimate access and avoiding unnecessary disruption.
+I considered how to move users into defined roles without removing necessary access or disrupting billing operations.
 
 <BR>
 
