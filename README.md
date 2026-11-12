@@ -85,11 +85,29 @@ The main recommendations are:
 
 - **Resolve Conflicting Access:** Prioritise Farid and Hana's refund permissions and verify that independent approval is enforced.
 - **Review Access Exceptions:** Validate unusual permissions against actual responsibilities, particularly invoice deletion, data exports and administrative access.
-- **Introduce RBAC Safely:** Follow the [phased rollout plan](Document/05.%20Rollout%20Plan.md), testing essential billing functions before removing existing grants.
-
-**Digging Deeper:** Beyond redesigning the roles, I examined how many individual permission grants could disappear under RBAC. The [Permission Grant Reduction assessment](Document/06.%20Permission%20Grant%20Reduction.md) identified **43 direct grants that could potentially be retired**, subject to validation.
+- **Introduce RBAC Safely:** Follow the phased rollout plan, testing essential billing functions before removing existing grants.
 
 **Status:** The proposed design is ready for review by Finance, Billing and IT. No changes have been implemented, and outstanding access decisions must be resolved before migration.
+
+
+<BR>
+
+### Digging Deeper | Permission Grant Reduction
+
+Beyond redesigning the roles, I examined how RBAC could reduce the number of individual permission assignments.
+
+The [Permission Grant Reduction assessment](Document/06.%20Permission%20Grant%20Reduction.md) identified **43 existing direct grants** that could potentially be replaced by role-based assignments, subject to business validation.
+
+<BR>
+
+### Technical Validation | PowerShell
+
+Alongside the proposed RBAC redesign, I built and tested a PowerShell script to analyse the existing billing permissions.
+
+The script identifies overlapping refund permissions, flags invoice deletion access and generates a CSV report. A separate test confirmed it detects changes in assigned permissions.
+
+[View the PowerShell Access Review](PowerShell%20Lab/README.md)
+
 
 <BR>
 
