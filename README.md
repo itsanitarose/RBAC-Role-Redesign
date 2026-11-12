@@ -76,15 +76,15 @@ I used these findings to shape a role structure based on responsibilities, with 
 
 ## Case Study Outcome
 
-The review resulted in a proposed [six role RBAC design](Document/02.%20Role%20Catalogue.md), with permissions grouped by business responsibilities rather than copied between employees.
+The review resulted in a proposed [six-role RBAC design](Document/02.%20Role%20Catalogue.md), with permissions grouped by business responsibilities rather than copied between employees.
 
 The main recommendations are:
 
 - **Resolve Conflicting Access:** Prioritise Farid and Hana's refund permissions and verify that independent approval is enforced.
 - **Review Access Exceptions:** Validate unusual permissions against actual responsibilities, particularly invoice deletion, data exports and administrative access.
-- **Introduce RBAC Safely:** Follow the [phased rollout plan](Document/05.%20Rollout%20%26%20Verification.md), testing essential billing functions before removing existing grants.
+- **Introduce RBAC Safely:** Follow the [phased rollout plan](Document/05.%20Rollout%20Plan.md), testing essential billing functions before removing existing grants.
 
-**Digging Deeper:** Beyond redesigning the roles, I examined how many individual permission grants could disappear under RBAC. The [Permission Grant Reduction assessment](Document/06.%20Permission%20Reduction.md) identified **43 direct grants that could potentially be retired**, subject to validation.
+**Digging Deeper:** Beyond redesigning the roles, I examined how many individual permission grants could disappear under RBAC. The [Permission Grant Reduction assessment](Document/06.%20Permission%20Grant%20Reduction.md) identified **43 direct grants that could potentially be retired**, subject to validation.
 
 **Status:** The proposed design is ready for review by Finance, Billing and IT. No changes have been implemented, and outstanding access decisions must be resolved before migration.
 
@@ -99,18 +99,21 @@ Removing access might seem like the obvious fix, but removing something an emplo
 The next step is to confirm responsibilities, resolve the conflicting permissions and test whether the application can enforce the proposed controls.
 
 **Access should follow responsibility, not whoever happened to have the permissions first.**
-<BR><BR>
+
+<BR>
 
 ## Explore the Investigation
+
 | Document | What's Inside |
 |---|---|
 | [01. Source Data](Document/01.%20Source%20Data.md) | Original permissions matrix |
 | [02. Role Catalogue](Document/02.%20Role%20Catalogue.md) | Proposed roles and permissions |
 | [03. Access Outliers](Document/03.%20Access%20Outliers.md) | Exceptions and recommended actions |
 | [04. Segregation of Duties](Document/04.%20Segregation%20of%20Duties.md) | Conflicting permissions and affected users |
-| [05. Rollout & Verification](Document/05.%20Rollout%20%26%20Verification.md) | Safe migration plan and validation checks |
-| [06. Digging Deeper](Document/06.%20Digging%20Deeper.md) | Permission grant reduction calculation |
+| [05. Rollout Plan](Document/05.%20Rollout%20Plan.md) | Safe migration plan and validation checks |
+| [06. Permission Grant Reduction](Document/06.%20Permission%20Grant%20Reduction.md) | Permission grant reduction calculation |
 
+---
 
-
+[← Week 5: SAML SSO Troubleshooting](https://github.com/itsanitarose/SAML-SSO-Troubleshooting) · [All Case Studies](https://github.com/itsanitarose/IAM-Case-Studies)
 
