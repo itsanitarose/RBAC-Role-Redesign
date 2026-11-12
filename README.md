@@ -36,6 +36,7 @@ With these risks in mind, I reviewed the permission matrix to identify any signs
 
 I approached the permission review with four questions, focusing on **role consistency, business justification and potentially conflicting access.**
 
+<BR>
 
 ### 1. What access does each job actually require?
 I compared employees with similar responsibilities to identify permissions that might belong in a standard role, subject to business approval.
@@ -50,7 +51,9 @@ I examined whether users could perform conflicting actions, especially approving
 ### 4. How can we introduce new roles without disrupting work?
 I considered how to move users into defined roles without removing necessary access or disrupting billing operations.
 
-Reducing permissions is only part of the picture. The main thing is that access matches responsibilities without creating unnecessary exposure.
+<BR>
+
+While reducing permissions is only part of the picture, the main thing is that access matches responsibilities without creating unnecessary exposure.
 
 
 <BR>
