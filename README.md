@@ -88,6 +88,9 @@ The main recommendations are:
 
 **Status:** The proposed design is ready for review by Finance, Billing and IT. No changes have been implemented, and outstanding access decisions must be resolved before migration.
 
+<BR>
+
+## Reflection & Next Steps
 
 What stood out to me wasn't simply how much access some employees had. It was how little the existing permission assignments told me about why they had it.
 
