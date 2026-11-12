@@ -57,17 +57,45 @@ Reducing permissions is only part of the picture. The main thing is that access 
 
 ## What I Found
 
-<BR><BR>
+
+In reviewing the [billing permissions matrix](Document/01.%20Source%20Data.md), I identified three concerns:
+
+- **Conflicting Access:** Farid and Hana can both approve and issue refunds, raising questions about independent oversight.
+- **Inconsistent Permissions:** Employees doing similar jobs don't always have the same access. Some differences may be justified, but they need explaining.
+- **Sensitive Access:** Invoice deletion, patient billing data exports and administrative permissions need closer examination.
+
+<BR>
+
+The matrix tells me who has access, but not who actually needs it. Removing every unusual permission would be premature, and leaving everything as it is would carry the same risks forward.
+
+I used these findings to shape a role structure based on responsibilities, with conflicting permissions separated and exceptions requiring justification.
+
+
+<BR>
+
 
 ## Case Study Outcome
 
-**Designed for growth:** I proposed a role structure based on business responsibilities rather than copying permissions between employees. The aim is to make access consistent as Northwind Health grows, without creating unnecessary roles or weakening security controls.
+The review resulted in a proposed [six-role RBAC design](Document/02.%20Role%20Catalogue.md), with permissions grouped by business responsibilities rather than copied between employees.
 
-[Explore the proposed role catalogue](Document/02.%20Role%20Catalogue.md)
-<BR><BR>
+The main recommendations are:
 
-## Reflection & Next Steps
+- **Resolve Conflicting Access:** Prioritise Farid and Hana's refund permissions and verify that independent approval is enforced.
+- **Review Access Exceptions:** Validate unusual permissions against actual responsibilities, particularly invoice deletion, data exports and administrative access.
+- **Introduce RBAC Safely:** Follow the [phased rollout plan](Document/05.%20Rollout%20%26%20Verification.md), testing essential billing functions before removing existing grants.
 
+**Digging Deeper:** Beyond redesigning the roles, I examined how many individual permission grants could disappear under RBAC. The [Permission Grant Reduction assessment](Document/06.%20Permission%20Reduction.md) identified **43 direct grants that could potentially be retired**, subject to validation.
+
+**Status:** The proposed design is ready for review by Finance, Billing and IT. No changes have been implemented, and outstanding access decisions must be resolved before migration.
+
+
+What stood out to me wasn't simply how much access some employees had. It was how little the existing permission assignments told me about why they had it.
+
+Removing access might seem like the obvious fix, but removing something an employee genuinely needs creates another problem.
+
+The next step is to confirm responsibilities, resolve the conflicting permissions and test whether the application can enforce the proposed controls.
+
+**Access should follow responsibility, not whoever happened to have the permissions first.**
 <BR><BR>
 
 ## Explore the Investigation
