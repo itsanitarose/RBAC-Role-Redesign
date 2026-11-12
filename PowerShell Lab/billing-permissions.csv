@@ -1,0 +1,13 @@
+Name,JobTitle,ViewInvoices,CreateInvoice,EditInvoice,DeleteInvoice,ApproveRefunds,IssueRefunds,ExportPatientBillingData,AdminSettings
+Ana,Finance Analyst,1,0,0,0,0,0,1,0
+Ben,Finance Analyst,1,0,0,0,0,0,1,0
+Chloe,Finance Analyst,1,1,1,0,0,0,1,0
+Dev,Billing Specialist,1,1,1,0,1,0,0,0
+Elena,Billing Specialist,1,1,1,0,1,0,0,0
+Farid,Billing Specialist,1,1,1,1,1,1,1,0
+Grace,Billing Specialist,1,1,1,0,1,0,0,0
+Hana,Finance Manager,1,1,1,1,1,1,1,1
+Ivan,Support Agent,1,0,0,0,0,0,0,0
+Jo,Support Agent,1,0,0,0,0,1,0,0
+Kai,IT Admin,1,0,0,0,0,0,0,1
+Lena,External Auditor,1,0,1,0,0,0,1,0
