@@ -95,15 +95,15 @@ The main recommendations are:
 
 What challenged me most in this review was realising that a cleaner permission matrix does not automatically mean better security.
 
-When I excluded invoice deletion from the proposed roles in my first draft, I realised I might have removed something the business still needs. Fewer permissions might look neat on paper, but what is really important is whether people still have the right access to do their jobs.
+When I excluded invoice deletion from the proposed roles in my first draft, I realised I might have removed something the business still needs. Fewer permissions might look neat on paper, but what really matters is whether people still have the right access to do their jobs.
 
 I also had to distinguish between permissions that simply look unusual and those that create genuine conflicts. The matrix showed me who had access, but it couldn't tell me why they had it, how they used it or what safeguards were already in place.
 
-Another question came up as I designed the six roles: **would they actually enforce the access boundaries I intended?**
+Another question came up as I designed the six roles: **how could I be sure the proposed access controls would work as intended?**
 
-Separating refund approval from issuance looked like a sensible control. But nothing in the role catalogue prevents someone from being assigned both roles. And even if those roles are assigned separately, how do I know the application prevents someone from approving their own refund?
+I separated refund approval from issuance into different roles and recommended controls to keep those duties independent. But the role catalogue alone doesn't prevent someone from being assigned both roles. Even with separate assignments, I still need to know whether the application enforces independent approval.
 
-The same applies to the Billing Viewer role. Giving support staff and auditors permission to view invoices doesn't tell me which patient records they can actually see.
+The same applies to the Billing Viewer role. Giving support staff and auditors permission to view invoices doesn't tell me which patient records they can actually see. Read-only access still needs appropriate boundaries.
 
 This made me realise that **designed permissions and effective access are not necessarily the same thing.**
 
