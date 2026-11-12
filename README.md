@@ -79,7 +79,7 @@ I used these findings to shape a role structure based on responsibilities, with 
 
 ## Case Study Outcome
 
-The review resulted in a proposed [six-role RBAC design](Document/02.%20Role%20Catalogue.md), with permissions grouped by business responsibilities rather than copied between employees.
+The review resulted in a proposed [six role RBAC design](Document/02.%20Role%20Catalogue.md), with permissions grouped by business responsibilities rather than copied between employees.
 
 The main recommendations are:
 
