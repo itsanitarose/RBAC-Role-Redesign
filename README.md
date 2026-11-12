@@ -90,15 +90,27 @@ The main recommendations are:
 
 <BR>
 
+
 ## Reflection & Next Steps
 
-What stood out to me wasn't simply how much access some employees had. It was how little the existing permission assignments told me about why they had it.
+What challenged me most in this review was realising that a cleaner permission matrix does not automatically mean better security.
 
-Removing access might seem like the obvious fix, but removing something an employee genuinely needs creates another problem.
+When I excluded invoice deletion from the proposed roles in my first draft, I realised I might have removed something the business still needs. Fewer permissions might look neat on paper, but what is really important is whether people still have the right access to do their jobs.
 
-The next step is to confirm responsibilities, resolve the conflicting permissions and test whether the application can enforce the proposed controls.
+I also had to distinguish between permissions that simply look unusual and those that create genuine conflicts. The matrix showed me who had access, but it couldn't tell me why they had it, how they used it or what safeguards were already in place.
 
-**Access should follow responsibility, not whoever happened to have the permissions first.**
+Another question came up as I designed the six roles: **would they actually enforce the access boundaries I intended?**
+
+Separating refund approval from issuance looked like a sensible control. But nothing in the role catalogue prevents someone from being assigned both roles. And even if those roles are assigned separately, how do I know the application prevents someone from approving their own refund?
+
+The same applies to the Billing Viewer role. Giving support staff and auditors permission to view invoices doesn't tell me which patient records they can actually see.
+
+This made me realise that **designed permissions and effective access are not necessarily the same thing.**
+
+Going forward, I'll take this thinking into future IAM investigations. I'll question not only which permissions someone holds, but how those permissions work together, what resources they expose and what users can actually do.
+
+**A well designed role structure is a good starting point. But the real test is whether the system actually enforces the access boundaries we intended.**
+
 
 <BR>
 
