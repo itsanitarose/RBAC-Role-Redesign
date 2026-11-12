@@ -145,7 +145,8 @@ Going forward, I'll take this thinking into future IAM investigations. I'll ques
 | [04. Segregation of Duties](Document/04.%20Segregation%20of%20Duties.md) | Conflicting permissions and affected users |
 | [05. Rollout Plan](Document/05.%20Rollout%20Plan.md) | Safe migration plan and validation checks |
 | [06. Permission Grant Reduction](Document/06.%20Permission%20Grant%20Reduction.md) | Permission grant reduction calculation |
-| [PowerShell Access Review](PowerShell%20Lab/README.md) | Automated permission analysis, CSV reporting and verified test results |
+| [Lab: PowerShell Access Review](PowerShell%20Lab/README.md) | Automated permission checks, CSV reporting and verified test results |
+
 
 <BR>
 
