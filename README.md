@@ -79,35 +79,25 @@ I used these findings to shape a role structure based on responsibilities, with 
 
 ## Case Study Outcome
 
-The review resulted in a proposed [six role RBAC design](Document/02.%20Role%20Catalogue.md), with permissions grouped by business responsibilities rather than copied between employees.
+The review resulted in a proposed [six-role RBAC design](Document/02.%20Role%20Catalogue.md), with permissions grouped by business responsibilities rather than copied between employees.
 
 The main recommendations are:
 
 - **Resolve Conflicting Access:** Prioritise Farid and Hana's refund permissions and verify that independent approval is enforced.
 - **Review Access Exceptions:** Validate unusual permissions against actual responsibilities, particularly invoice deletion, data exports and administrative access.
-- **Introduce RBAC Safely:** Follow the phased rollout plan, testing essential billing functions before removing existing grants.
+- **Introduce RBAC Safely:** Follow the [phased rollout plan](Document/05.%20Rollout%20Plan.md), testing essential billing functions before removing existing grants.
 
 **Status:** The proposed design is ready for review by Finance, Billing and IT. No changes have been implemented, and outstanding access decisions must be resolved before migration.
 
+**Digging Deeper | Permission Grant Reduction**
 
-<BR>
+Beyond redesigning the roles, I examined how RBAC could reduce individual permission assignments. The [Permission Grant Reduction assessment](Document/06.%20Permission%20Grant%20Reduction.md) identified **43 existing direct grants** that could potentially be replaced by role-based assignments, subject to business validation.
 
-### Digging Deeper | Permission Grant Reduction
+**Technical Validation | PowerShell**
 
-Beyond redesigning the roles, I examined how RBAC could reduce the number of individual permission assignments.
-
-The [Permission Grant Reduction assessment](Document/06.%20Permission%20Grant%20Reduction.md) identified **43 existing direct grants** that could potentially be replaced by role-based assignments, subject to business validation.
-
-<BR>
-
-### Technical Validation | PowerShell
-
-Alongside the proposed RBAC redesign, I built and tested a PowerShell script to analyse the existing billing permissions.
-
-The script identifies overlapping refund permissions, flags invoice deletion access and generates a CSV report. A separate test confirmed it detects changes in assigned permissions.
+I built and tested a PowerShell script to identify overlapping refund permissions, flag invoice deletion access and generate CSV reports. A separate test confirmed that it detected a newly introduced refund permission overlap.
 
 [View the PowerShell Access Review](PowerShell%20Lab/README.md)
-
 
 <BR>
 
@@ -116,7 +106,7 @@ The script identifies overlapping refund permissions, flags invoice deletion acc
 
 What challenged me most in this review was realising that a cleaner permission matrix does not automatically mean better security.
 
-When I excluded invoice deletion from the proposed roles in my first draft, I realised I might have removed something the business still needs. Fewer permissions might look neat on paper, but what really matters is whether people still have the right access to do their jobs.
+When I excluded invoice deletion from the proposed roles in my first draft, I realised I might have removed something the business still needs. Fewer permissions might look neat on paper, but what is really important is whether people still have the right access to do their jobs.
 
 I also had to distinguish between permissions that simply look unusual and those that create genuine conflicts. The matrix showed me who had access, but it couldn't tell me why they had it, how they used it or what safeguards were already in place.
 
