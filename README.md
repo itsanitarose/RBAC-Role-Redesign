@@ -10,7 +10,9 @@ My manager writes:
 
 <br>
 
-**Supporting information:** [Billing permissions matrix](Document/01.%20Source%20Data.md)
+
+**Supporting Information:** [Billing permissions matrix](Document/01.%20Billing%20permissions%20matrix.md)
+
 
 
 <BR>
@@ -105,7 +107,7 @@ I used these findings to shape a role structure based on responsibilities, with 
 
 ## Case Study Outcome
 
-The review resulted in a proposed [six-role RBAC design](Document/02.%20Role%20Catalogue.md), with permissions grouped by business responsibilities rather than copied between employees.
+The review resulted in a proposed [six role RBAC design](Document/02.%20Role%20Catalogue.md), with permissions grouped by business responsibilities rather than copied between employees.
 
 The main recommendations are:
 
@@ -151,17 +153,19 @@ Going forward, I'll take this thinking into future IAM investigations. I'll ques
 
 <BR>
 
+
 ## Explore the Investigation
 
 | Document | What's Inside |
 |---|---|
-| [01. Source Data](Document/01.%20Source%20Data.md) | Original permissions matrix |
+| [01. Billing permissions matrix](Document/01.%20Billing%20permissions%20matrix.md) | Original permissions matrix |
 | [02. Role Catalogue](Document/02.%20Role%20Catalogue.md) | Proposed roles and permissions |
 | [03. Access Outliers](Document/03.%20Access%20Outliers.md) | Exceptions and recommended actions |
 | [04. Segregation of Duties](Document/04.%20Segregation%20of%20Duties.md) | Conflicting permissions and affected users |
 | [05. Rollout Plan](Document/05.%20Rollout%20Plan.md) | Safe migration plan and validation checks |
 | [06. Permission Grant Reduction](Document/06.%20Permission%20Grant%20Reduction.md) | Permission grant reduction calculation |
 | [Lab: PowerShell Access Review](PowerShell%20Lab/README.md) | Automated permission checks, CSV reporting and verified test results |
+
 
 
 <BR>
