@@ -12,6 +12,32 @@ My manager writes:
 
 **Supporting information:** [Billing permissions matrix](Document/01.%20Source%20Data.md)
 
+
+<BR>
+
+
+<table>
+<tr>
+<td>
+
+**🛡️ Decision**
+
+**Replace copied permissions with six role-based access groups, after business approval and testing.**
+
+The review found 43 direct permission grants across 12 users. Farid and Hana hold both refund approval and issuance permissions, creating a conflict that needs priority attention.
+
+I recommended separating conflicting duties, reviewing unnecessary access and assigning permissions through approved roles.
+
+The changes should be tested in stages to avoid disrupting billing.
+
+**Supporting evidence:** [Access Outliers](Document/03.%20Access%20Outliers.md) · [Segregation of Duties](Document/04.%20Segregation%20of%20Duties.md)
+
+</td>
+</tr>
+</table>
+
+
+
 <BR>
 
 
