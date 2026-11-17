@@ -81,11 +81,12 @@ The review resulted in a proposed [six role RBAC design](Document/02.%20Role%20C
 **Main recommendations:**
 - Resolve conflicting access on Farid and Hana first.
 - Treat Delete Invoice as a break-glass permission.
-- Follow the [phased rollout plan](Document/05.%20Rollout%20Plan.md), including a two-week parallel run.
+- Follow the [phased rollout plan](Document/05.%20Rollout%20Plan.md), including a two week parallel run.
 
 **Status:** Ready for review by Finance, Billing and IT.
 
-**Permission Grant Reduction:** 43 grants move into roles. After cleaning outliers, 14 permissions disappear. See [Permission Grant Reduction](Document/06.%20Permission%20Grant%20Reduction.md).
+**Permission Grant Reduction:** 43 grants move into roles. After cleaning outliers, 14 permissions disappear.
+See [Permission Grant Reduction](Document/06.%20Permission%20Grant%20Reduction.md).
 
 <BR>
 
