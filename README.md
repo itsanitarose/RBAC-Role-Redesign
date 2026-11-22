@@ -119,5 +119,5 @@ A well designed role structure is a good starting point. The real test is whethe
 
 ---
 
-[← Week 5: SAML SSO Troubleshooting](https://github.com/itsanitarose/SAML-SSO-Troubleshooting) · [All Case Studies](https://github.com/itsanitarose/IAM-Case-Studies)
+[← Week 5: SAML SSO Troubleshooting](https://github.com/itsanitarose/IAM-SAML-SSO-Troubleshooting) · [All Case Studies](https://github.com/itsanitarose/IAM-Case-Studies) · [Week 7: Sign-in Triage & Policy Design →](https://github.com/itsanitarose/Sign-in-Triage-Policy-Design)
 
